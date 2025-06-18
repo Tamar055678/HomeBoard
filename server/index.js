@@ -17,6 +17,8 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
 // טעינת הסכמות (מריצות הגדרת טבלאות)
 require('./models/Tenant.model');
 require('./models/landlord.model');
+require('./models/paymentMethod.model');
+
 
 //require('./models/Apartment');
 // ...
@@ -24,6 +26,8 @@ require('./models/landlord.model');
 // טעינת ראוטרים
 app.use('/api/tenants.api', require('./api/tenant.api'));
 app.use('/api/landlords', require('./api/landlord.api'));
+app.use('/api/payment-methods', require('./api/paymentMethod.api'));
+
 
 //app.use('/api/apartments', require('./api/apartments'));
 // ...
