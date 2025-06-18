@@ -16,11 +16,15 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
 
 // טעינת הסכמות (מריצות הגדרת טבלאות)
 require('./models/Tenant.model');
+require('./models/landlord.model');
+
 //require('./models/Apartment');
 // ...
 
 // טעינת ראוטרים
 app.use('/api/tenants.api', require('./api/tenant.api'));
+app.use('/api/landlords', require('./api/landlord.api'));
+
 //app.use('/api/apartments', require('./api/apartments'));
 // ...
 
