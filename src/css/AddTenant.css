@@ -1,0 +1,58 @@
+.add-tenant-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.add-tenant-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-tenant-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-tenant-container label {
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.add-tenant-container input {
+  padding: 8px;
+  font-size: 16px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-tenant-container button {
+  padding: 10px;
+  background-color: #0077cc;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.add-tenant-container button:hover {
+  background-color: #005fa3;
+}
+
+.success {
+  color: green;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}

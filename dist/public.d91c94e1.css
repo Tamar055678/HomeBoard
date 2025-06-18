@@ -1,0 +1,79 @@
+.add-tenant-container {
+  background-color: #f9f9f9;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+}
+
+.add-tenant-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-tenant-container form {
+  flex-direction: column;
+  display: flex;
+}
+
+.add-tenant-container label {
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.add-tenant-container input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 4px;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.add-tenant-container button {
+  color: #fff;
+  cursor: pointer;
+  background-color: #07c;
+  border: none;
+  border-radius: 4px;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.add-tenant-container button:hover {
+  background-color: #005fa3;
+}
+
+.success {
+  color: green;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.tenants-table {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.tenants-table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tenants-table th, .tenants-table td {
+  text-align: right;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+}
+
+.tenants-table th {
+  background-color: #f0f0f0;
+}
+/*# sourceMappingURL=public.d91c94e1.css.map */

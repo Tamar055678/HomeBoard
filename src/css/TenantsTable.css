@@ -1,0 +1,20 @@
+.tenants-table {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.tenants-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tenants-table th,
+.tenants-table td {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  text-align: right;
+}
+
+.tenants-table th {
+  background-color: #f0f0f0;
+}

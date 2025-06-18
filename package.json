@@ -1,0 +1,43 @@
+{
+  "name": "electron-react-sqlite-app",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "parcel serve public/index.html --port 3000",
+    "server": "node server/index.js",
+    "electron-dev": "concurrently \"npm run dev\" \"npm run server\" \"wait-on http://localhost:3000 && electron .\""
+  },
+  "targets": {
+    "main": {
+      "context": "node",
+      "source": "main.js",
+      "includeNodeModules": true,
+      "outputFormat": "commonjs",
+      "isLibrary": true,
+      "distDir": "dist"
+    },
+    "default": {
+      "context": "browser"
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.10",
+    "@babel/preset-env": "^7.22.10",
+    "@babel/preset-react": "^7.22.5",
+    "babel-loader": "^9.1.3",
+    "concurrently": "^8.2.0",
+    "electron": "^30.0.0",
+    "parcel": "^2.11.0",
+    "wait-on": "^7.0.1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sqlite3": "^5.1.6",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  }
+}
